@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Quick Cuisine</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="QuickCuisine.html"><img src="logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="QuickCuisine.html">Home</a></li>
+                <li><a href="food.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="acc.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="cart.jpg" width="30px" height="30px"></a>
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+    
+<!--------- single product details -------->
+    
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="PALABOK.jpg" width="100%">
+            </div>
+            <div class="col-2">
+                <p>Home</p>
+                <h1>Palabok</h1>
+                <h4>P199.00</h4>
+                <select>
+                    <option>For 3 Person</option>
+                    <option>For 5 Person</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                
+                <h3>Product Details</h3>
+                <br>
+                <p>Pansit palabok is a luscious, buttery, bisque–like shrimp sauce tossed with white rice noodles and topped with tsitsaron, crisp-fried pork rinds.</p>
+            </div>
+            </div>
+        </div>
+
+<!------- footer --------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h2>Follow us</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                    <h2>Message Us</h2>
+                    <ul>
+                        <li>09075684587</li>
+                    </ul>
+                </div>
+                 <div class="footer-col-2">
+                     <h4>Our community/nation/world is facing hunger and poverty. While we are actively helping the children, we need your help to make our efforts go even further!
+
+You can help us to STOP THE HUNGER and POVERTY. Your support is crucial to our efforts to end our major problems.
+
+If you’re able, we’d love it if you could make a donation or support to help us achieve our mission.
+
+Thank you in advance for your contribution. Your donation and support will go toward and what we earn we will give to children who are suffering and experiencing hunger.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------- is for toggle menu -------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                   MenuItems.style.maxHeight = "220px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+</body>
+</html>
